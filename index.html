@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokedex</title>
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&amp;display=swap" rel="stylesheet">   
+        <link rel="stylesheet" href="/stylesheets/scrollbar.css">
+    </head>
+    <body>
+        <header>
+            <a href="/index.html">
+                <img src="/assets/pokeball.png" alt="ícone de pokebola" class="logo">
+            </a>
+            <div>
+                <label for="tipo-pokemon">Filtrar por tipo:</label>
+                <select id="tipo-pokemon" class="seletor-personalizado">
+                    <option value="">Todos</option>
+                    <option value="fogo">Fogo</option>
+                    <option value="agua">Água</option>
+                    <option value="grama">Grama</option>
+                    <option value="inseto">Inseto</option>
+                    <option value="veneno">Veneno</option>
+                </select>
+            </div>
+
+            <button id="botao-alterar-tema">
+                <img src="/assets/sun.png" alt="ícone do sol para trocar para modo claro" class="imagem-botao">
+            </button>
+        </header>   
+        <main>
+            <ul class="lista-dex"  id="lista-pokemon">
+                <li class="cartao-pokemon">
+                    <div class="cartao-pokemon__nome-pokemon">
+                        <span>Bulbasaur</span>
+                        <span>#001</span>
+                    </div>
+                    <img src="./assets/bulbasaur.gif" alt="gif do pokemon bulbasaur" class="gif-pokemon">
+                    <ul class="tipos">
+                        <li class="tipo grama">Grama</li>
+                        <li class="tipo veneno">Veneno</li>
+                    </ul>
+
+                    <p>Há uma semente de planta em suas costas desde o dia em que este Pokémon nasceu. A semente cresce lentamente.</p>
+                </li>
+                <li class="cartao-pokemon">
+                    <div class="cartao-pokemon__nome-pokemon">
+                        <span>Ivysaur</span>
+                        <span>#002</span>
+                    </div>
+                    <img src="./assets/ivysaur.gif" alt="gif do pokemon bulbasaur" class="gif-pokemon">
+                    <ul class="tipos">
+                        <li class="tipo grama">Grama</li>
+                        <li class="tipo veneno">Veneno</li>
+                    </ul>
+
+                    <p>Quando o bulbo nas costas cresce, parece perder a capacidade de ficar de pé nas patas traseiras.</p>
+                </li>
+                <li class="cartao-pokemon">
+                    <div class="cartao-pokemon__nome-pokemon">
+                        <span>Venusaur</span>
+                        <span>#003</span>
+                    </div>
+                    <img src="./assets/venusaur.gif" alt="gif do pokemon bulbasaur" class="gif-pokemon">
+                    <ul class="tipos">
+                        <li class="tipo grama">Grama</li>
+                        <li class="tipo veneno">Veneno</li>
+                    </ul>
+
+                    <p>Sua planta floresce quando está absorvendo energia solar. Ele permanece em movimento para buscar a luz do sol.</p>
+                </li>
+                <li class="cartao-pokemon">
+                    <div class="cartao-pokemon__nome-pokemon">
+                        <span>Charmander</span>
+                        <span>#004</span>
+                    </div>
+                    <img src="./assets/charmander.gif" alt="gif do pokemon bulbasaur" class="gif-pokemon">
+                    <ul class="tipos">
+                        <li class="tipo fogo">Fogo</li>
+                    </ul>
+
+                    <p>Tem preferência por coisas quentes. Quando chove, diz-se que o vapor jorra da ponta de sua cauda.</p>
+                </li>
+                <li class="cartao-pokemon">
+                    <div class="cartao-pokemon__nome-pokemon">
+                        <span>Charmeleon</span>
+                        <span>#005</span>
+                    </div>
+                    <img src="./assets/charmeleon.gif" alt="gif do pokemon bulbasaur" class="gif-pokemon">
+                    <ul class="tipos">
+                        <li class="tipo fogo">Fogo</li>
+                    </ul>
+
+                    <p>Tem uma natureza bárbara. Em batalha, ele chicoteia sua cauda de fogo e corta com garras afiadas.</p>
+                </li>
+                <li class="cartao-pokemon">
+                    <div class="cartao-pokemon__nome-pokemon">
+                        <span>Charizard</span>
+                        <span>#006</span>
+                    </div>
+                    <img src="./assets/charizard.gif" alt="gif do pokemon bulbasaur" class="gif-pokemon">
+                    <ul class="tipos">
+                        <li class="tipo fogo">Fogo</li>
+                    </ul>
+
+                    <p>Ele cospe fogo que é quente o suficiente para derreter pedras. Pode causar incêndios florestais soprando chamas.</p>
+                </li>
+                <li class="cartao-pokemon">
+                    <div class="cartao-pokemon__nome-pokemon">
+                        <span>Squirtle</span>
+                        <span>#007</span>
+                    </div>
+                    <img src="./assets/squirtle.gif" alt="gif do pokemon bulbasaur" class="gif-pokemon">
+                    <ul class="tipos">
+                        <li class="tipo agua">Água</li>
+                    </ul>
+
+                    <p>Quando retrai seu longo pescoço em sua concha, esguicha água com força vigorosa.</p>
+                </li>
+                <li class="cartao-pokemon">
+                    <div class="cartao-pokemon__nome-pokemon">
+                        <span>Wartortle</span>
+                        <span>#008</span>
+                    </div>
+                    <img src="./assets/wartortle.gif" alt="gif do pokemon bulbasaur" class="gif-pokemon">
+                    <ul class="tipos">
+                        <li class="tipo agua">Água</li>
+                    </ul>
+
+                    <p>É reconhecido como um símbolo de longevidade. Se sua casca tiver algas, aquele Wartortle é muito velho.</p>
+                </li>
+                <li class="cartao-pokemon">
+                    <div class="cartao-pokemon__nome-pokemon">
+                        <span>Blastoise</span>
+                        <span>#009</span>
+                    </div>
+                    <img src="./assets/blastoise.gif" alt="gif do pokemon bulbasaur" class="gif-pokemon">
+                    <ul class="tipos">
+                        <li class="tipo agua">Água</li>
+                    </ul>
+
+                    <p>Ele esmaga seu inimigo sob seu corpo pesado para causar desmaios. Em uma pitada, ele se retirará para dentro de sua casca.</p>
+                </li>
+                <li class="cartao-pokemon">
+                    <div class="cartao-pokemon__nome-pokemon">
+                        <span>Caterpie</span>
+                        <span>#010</span>
+                    </div>
+                    <img src="./assets/caterpie.gif" alt="gif do pokemon bulbasaur" class="gif-pokemon">
+                    <ul class="tipos">
+                        <li class="tipo inseto">Inseto</li>
+                    </ul>
+
+                    <p>Para proteção, ele libera um fedor horrível da antena em sua cabeça para afastar os inimigos.</p>
+                </li>
+            </ul>
+        </main>
+        <footer>
+
+        </footer>
+
+        <script src="/js/index.js"></script>
+    </body>
+</html>
