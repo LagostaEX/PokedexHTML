@@ -17,4 +17,4 @@
 
 * CSS (Estilização da página)
 
-* Javascript (Para alteração modo escuro e filtrar)
+* Javascript (Para alteração modo escuro/claro e filtro de pokemons por tipo)
