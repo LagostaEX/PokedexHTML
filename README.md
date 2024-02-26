@@ -1,4 +1,4 @@
-# Exemplo de portifólio | Em ajuste
+# PokeDex em HTML
 
 
 | :placard: Pokedex HTML, CSS & Javascript |     |
